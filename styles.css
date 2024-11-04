@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'TitleFont';
+    src: url('fonts/Titillium-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo {
+    margin-bottom: 20;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    background-color: #ffffff00;
+    padding-top: 3%;
+}
+
+.padding-15 {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.institutions {
+    align-items: left;
+    margin-bottom: 100;
+}
+
+.logo-instit {
+    margin-left:20;
+    margin-right:20;
+}
+
+.logo-TF {
+    width:1450px;
+    height:220px;
+    margin-bottom:0;
+}
+
+.quote {
+    font-size: 15;
+    color: #929292;
+}
+
+.en-tete {
+    margin-bottom: 30;
+    margin-top: 20;
+    display: flex;
+    align-items: top;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+hr {
+    border: 1px solid rgb(187, 187, 187);
+    width:70%;
+    margin: 20px auto; 
+    margin-bottom: 40;
+}
+.classif {
+    width: 20%;
+    height: auto;
+}
+
+.split {
+    display: flex;
+}
+
+.left-panel {
+    width: 30%;
+    color: white;
+    font-size: 20;
+}
+
+.accordion-link {
+    font-size: 18;
+}
+
+.right-panel {
+    width: 70%;
+}
+
+h1 {
+    font-family: "TitleFont", sans-serif;
+    color: #242424;
+    font-size:42;
+}
+
+h2 {
+    color: #474747;
+}
+
+.panel {
+    color: white;
+    font-size: 17;
+    width:250;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.panel-heading {
+    align-items: center;
+    text-align: center;
+    width:250;
+    font-size: 17;
+    color: white;
+}
+
+.panel-title {
+    font-size: 17;
+}
+
+.container {
+    padding:0;
+    margin:0;
+    font-size: 17;
+}
+
+.collapse {
+    display: none;
+    font-size: 17;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+footer {
+    background-color: #f0f0f0;
+    margin-top: 30;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+
+.text-footer {
+    font-size: 15px;
+    text-align: center;
+    padding-left:40%;
+    padding-right:40%;
+}
+
+.text-footer-j {
+    font-size: 15px;
+    text-align: justify;
+    padding-left:40%;
+    padding-right:40%;
+}
+
+.classif-head {
+    font-size: 15;
+    font-family: "TitleFont", sans-serif;
+    color:rgb(92, 92, 92);
+    margin-bottom:10;
+}
+
