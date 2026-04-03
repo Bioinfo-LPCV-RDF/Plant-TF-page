@@ -24,8 +24,9 @@
 </div>
 
 <body>
+    <!-- <img id="logo" src="images/img-logo2.png" class="logo-TF" alt="Logo"> -->
     <div class="container-header">
-        <img id="logo" src="images/img-logo.png" class="logo-TF" alt="Logo">
+        
         <div class="content-header">
             <h1>Structural classification for plant transcription factors</h1>
             <a href="https://www.cell.com/trends/plant-science/fulltext/S1360-1385(23)00227-3" target="_blank" class="quote">
@@ -43,467 +44,651 @@
                     We reviewed the 3D structures and models of plant TF DBDs to classify most of the 56 recognized plant TF types within the TFClass framework. 
                     This extended classification introduces eight new classes and 37 new families corresponding to DBD structures not found in mammals. 
                     Plant-TFClass thus provides a unique resource for comparing TFs across families and organisms.</p>
+                    <br><br/>
+
             </div>
             
         </div>
         
     </div>
     <hr>
-    <div id="additionnal-head-classif" class="padding-15 classif-head">
+    
+    <div class="legend">
+        <h2>LEGEND</h2>
+        Colors differentiate the eight structurally defined superclasses of TFs
+        DBDs that have homologs in plants.
+        A white outline groups the classes, while families are highlighted with a lighter background. 
+        Asterisks indicate TF families and classes that are not included in mammal TFClass. 
+        TF families share an evolutionary relationship, at least through distant sequence homology in the portion of 
+        the DBD that directly interacts with DNA. The only exceptions are families within the 
+        ‘Other C4 zinc finger-type factors’ and the ‘basic helix–loop–helix (bHLH)’ classes. 
+        </div>
+    
+    <!-- <div id="additionnal-head-classif" class="padding-15 classif-head">
         SUPERCLASS
-    </div>
+    </div> -->
 
-    <div class="split padding-15">
+    <div class="split whole-padding">
+
+        <!-- LEFT PANNEL  -->
         <div class="left-panel">
-            <div class="container">
-                <div class="panel-group" id="accordion">
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color:#892156;">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#title1" class="accordion-link" data-description-file="descriptions/superclass/description_HelixTurnHelix.html">Helix-turn-helix domains</a>
-                            </h4>
-                        </div>
-                        <div id="title1" class="collapse">
-                            <div class="panel-body">
-                                <div class="panel-group" id="accordion1">
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#b65785;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion1" href="#inside1" data-description-file="descriptions/class/description_Homeo.html">Homeo domain factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside1" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/family/description_DDT.html">DDT</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_HD-ZIP.html">HD-ZIP</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_LD.html">LD</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_PHD.html">PHD</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_PINTO.html">PINTO</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_SAWADEE.html">SAWADEE</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_PLINC.html">PLINC</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_TALE-type-HD.html">TALE-type HD</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_WOX.html">WOX</a>
-                                            </div>
-                                        </div>
+            <div class="superclass-HTH">
+                <a data-description-file="descriptions/superclass/description_HelixTurnHelix.html">
+                    <h2 class="superclass-title">Helix-Turn-Helix domains</h2>
+                    <!-- BLOCK 1 : HOMEO | TRYPTOPHAN + ARID + LEAFY + RWP + Forked + HSF-->
+                    <div class="block-1-HTH">
+            
+                        <!-- HOMEO -->
+                        <div class="class-HTH">
+                            <a data-description-file="descriptions/class/description_HelixTurnHelix_Homeo.html">
+                                <h3 class="class-title">Homeo domain factors</h3>
+            
+                                <!-- FAMILIES : 3 x 3-->
+                                <div class="block-2-HTH">
+                                    <div class="family-HTH">
+                                        <!-- <a data-description-file="descriptions/family/description_DDT.html"> -->
+                                            <h4 class="family-title">DDT</h4>
+                                        </a>
                                     </div>
-
-                                    <!-- Class -->
-
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#b65785;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion1" href="#inside2" class="fam" data-description-file="descriptions/class/description_HelixTurnHelix_TryptophanCluster.html">Tryptophan cluster factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside2" class="collapse" style="color:#db81ad;">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/family/description_MYB.html">MYB</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_GARP_ARR-B.html">GARP_ARR-B</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_Storekeeper.html">Storekeeper</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_MYB-related.html">MYB-related</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_GARP_G2like.html">GARP_G2-like</a><br>
-                                                <a class="fam" data-description-file="descriptions/family/description_Trihelix.html">Trihelix</a>
-                                            </div>
-                                        </div>
+                                    <div class="family-HTH">
+                                        <!-- <a data-description-file="descriptions/family/description_HD-ZIP.html"> -->
+                                            <h4 class="family-title">HD-ZIP</h4>
+                                        </a>
                                     </div>
-
-                                    <!-- End Class -->
-
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#b65785; align-items: center;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion1" href="#ARID" class="fam" data-description-file="descriptions/description_ARID.html">ARID</a>
-                                            </h4>
-                                        </div>
-                                    </div>
-
-                                    <!-- End Class -->
-
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#b65785;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion1" href="#LEAFY" class="fam" data-description-file="descriptions/description_LEAFY.html">LEAFY</a>
-                                            </h4>
-                                        </div>
-                                    </div>
-
-                                    <!-- End Class -->
-
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#b65785;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion1" href="#inside3" class="fam" data-description-file="descriptions/description_ForkedHead.html">Fork head/winged helix factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside3" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_E2F.html">E2F</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- End Class -->
-
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#b65785;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion1" href="#inside4" class="fam" data-description-file="descriptions/description_HSF.html">Heat shock factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside4" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_HSF.html">HSF</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- End Class -->
-
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#b65785;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion1" href="#RWP-RK" class="fam" data-description-file="descriptions/description_RWP-RK.html">RWP-RK</a>
-                                            </h4>
-                                        </div>
-                                    </div>
-
-                                    <!-- End Class -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color:#d0b945;">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#title2" class="accordion-link" class="fam" data-description-file="descriptions/superclass/description_BetaHairpin.html">Beta-Hairpin exposed by an alpha/beta-scaffold</a>
-                            </h4>
-                        </div>
-                        <div id="title2" class="collapse">
-                            <div class="panel-body">
-                                <div class="panel-group" id="accordion2">
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#e5d16d;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#inside5" class="fam" data-description-file="descriptions/description_GCM.html">GCM domain factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside5" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_NAC.html">NAC</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_VOZ.html">VOZ</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_CAMTA.html">CAMTA</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_WRKY.html">WRKY</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_FRSFRF.html">FRS/FRF</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#e5d16d;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#inside6" class="fam" data-description-file="descriptions/description_AP2EREBP.html">AP2/EREB</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside6" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_AP2.html">AP2</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_ERFDREB.html">ERF/DREB</a>
-                                            </div>
-                                        </div>
+                                    <div class="family-HTH">
+                                        <!-- <a data-description-file="descriptions/family/description_LD.html"> -->
+                                            <h4 class="family-title">LD</h4>
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- BEGIN SuperClass -->
-
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color:#45aa9a;">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#title3" class="accordion-link" class="fam" data-description-file="descriptions/superclass/description_OtherAllAlphaHelical.html">Other all-alpha-helical DNA-binding domains</a>
-                            </h4>
-                        </div>
-                        <div id="title3" class="collapse">
-                            <div class="panel-body">
-                                <div class="panel-group" id="accordion3">
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#68caba;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion3" href="#inside8" class="fam" data-description-file="descriptions/description_HeteromericCCAAT.html">Heteromeric CCAAT-binding factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside8" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_CONSTANS.html">CONSTANS</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_NF-YA.html">NF-YA</a>
-                                            </div>
-                                        </div>
+                                <div class="block-2-HTH">
+                                    <div class="family-HTH">
+                                        <!-- <a data-description-file="descriptions/family/description_PHD.html"> -->
+                                            <h4 class="family-title">PHD</h4>
+                                        </a>
                                     </div>
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#68caba;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion3" href="#inside9" class="fam" data-description-file="descriptions/description_EIL.html">EIL</a>
-                                            </h4>
-                                        </div>
+                                    <div class="family-HTH">
+                                        <!-- <a data-description-file="descriptions/family/description_SAWADEE.html"> -->
+                                            <h4 class="family-title">SAWADEE</h4>
+                                        </a>
                                     </div>
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#68caba;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion3" href="#inside10" class="fam" data-description-file="descriptions/description_HMG.html">HMG domain factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside10" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_YABBY.html">YABBY</a>
-                                            </div>
-                                        </div>
+                                    <div class="family-HTH">
+                                        <!-- <a data-description-file="descriptions/family/description_PINTO.html"> -->
+                                            <h4 class="family-title">PINTO</h4>
+                                        <!-- </a> -->
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- END SuperClass -->
-
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color:#332288;">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#title4" class="accordion-link" class="fam" data-description-file="descriptions/superclass/description_BetaSheet.html">Beta-Sheet binding to DNA</a>
-                            </h4>
-                        </div>
-                        <div id="title4" class="collapse">
-                            <div class="panel-body">
-                                <div class="panel-group" id="accordion4">
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#5443aa;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion4" href="#inside11" class="fam" data-description-file="descriptions/description_AThook.html">AT-hook factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside11" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_HMGA.html">HMGA</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_AHL.html">AHL</a><br>
-                                            </div>
-                                        </div>
+                                <div class="block-2-HTH">
+                                    <div class="family-HTH">
+                                        <!-- <a data-description-file="descriptions/family/description_PLINC.html"> -->
+                                            <h4 class="family-title">PLINC</h4>
+                                        </a>
                                     </div>
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#5443aa;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion4" href="#TCP" class="fam" data-description-file="descriptions/description_TCP.html">TCP</a>
-                                            </h4>
-                                        </div>
+                                    <div class="family-HTH">
+                                        <!-- <a data-description-file="descriptions/family/description_TALE-type-HD.html"> -->
+                                            <h4 class="family-title">TALE Type-HD</h4>
+                                        </a>
+                                    </div>
+                                    <div class="family-HTH">
+                                        <!-- <a data-description-file="descriptions/family/description_WOX.html"> -->
+                                            <h4 class="family-title">WOX</h4>
+                                        </a>
                                     </div>
                                 </div>
+                            </a>
+                        </div>
+            
+                        <div class="block-3-HTH">
+            
+                            <!-- TRYPTOPHAN + ARID + LEAFY + RWP + Forked + HSF-->
+            
+                            <!-- TRYPTOPHAN CLUSTER -->
+                            <div class="class-HTH">
+                                <a data-description-file="descriptions/class/description_HelixTurnHelix_TryptophanCluster.html">
+                                    <h3 class="class-title">Tryptophan cluster factors</h3>
+            
+                                    <!-- FAMILIES : 3 x 2-->
+                                    <div class="block-2-HTH">
+                                        <div class="family-HTH">
+                                            <!-- <a data-description-file="descriptions/family/description_MYB.html"> -->
+                                                <h4 class="family-title">MYB</h4>
+                                            </a>
+                                        </div>
+                                        <div class="family-HTH">
+                                            <!-- <a data-description-file="descriptions/family/description_GARP_ARR-B.html"> -->
+                                                <h4 class="family-title">GARP_ARR-B *</h4>
+                                            </a>
+                                        </div>
+                                        <div class="family-HTH">
+                                            <!-- <a data-description-file="descriptions/family/description_Storekeeper.html"> -->
+                                                <h4 class="family-title">Storekeeper *</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-2-HTH">
+                                        <div class="family-HTH">
+                                            <!-- <a data-description-file="descriptions/family/description_MYB-related.html"> -->
+                                                <h4 class="family-title">MYB-related</h4>
+                                            </a>
+                                        </div>
+                                        <div class="family-HTH">
+                                            <!-- <a data-description-file="descriptions/family/description_GARP-G2-like.html"> -->
+                                                <h4 class="family-title">GARP_G2-like *</h4>
+                                            </a>
+                                        </div>
+                                        <div class="family-HTH">
+                                            <!-- <a data-description-file="descriptions/family/description_Trihelix.html"> -->
+                                                <h4 class="family-title">Trihelix *</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- END SuperClass -->
-
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color:#aa4498;">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#title5" class="accordion-link" class="fam" data-description-file="descriptions/superclass/description_ZincCoordinating.html">Zinc-coordinating DNA-binding domains</a>
-                            </h4>
-                        </div>
-                        <div id="title5" class="collapse">
-                            <div class="panel-body">
-                                <div class="panel-group" id="accordion5">
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#c86ab7;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion5" href="#inside12" class="fam" data-description-file="descriptions/description_OtherC4ZincFingerType.html">Other C4 zinc finger-type factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside12" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_C4-GATA-related.html">C4-GATA-related</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_LBD.html">LBD</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_DOF.html">DOF</a>
-                                            </div>
-                                        </div>
+            
+                            <!-- ARID + LEAFY + RWP-RK + Forked wing + HSF-->
+                            <div class="block-4-HTH">
+            
+                                <!-- ARID + LEAFY + RWP  -->
+                                <div class="block-5-HTH">
+            
+                                    <div class="class-HTH" style="text-align: center;">
+                                        <a data-description-file="descriptions/class/description_HelixTurnHelix_ARID.html">
+                                            <h3 class="class-title">ARID</h3>
+                                        </a>
                                     </div>
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#c86ab7;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion5" href="#inside13" class="fam" data-description-file="descriptions/description_C2H2ZincFinger.html">C2H2 zinc finger factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside13" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_C2H2.html">C2H2</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_IDD.html">IDD</a>
-                                            </div>
-                                        </div>
+                                    <div class="class-HTH" style="text-align: center;">
+                                        <a data-description-file="descriptions/class/description_HelixTurnHelix_LEAFY.html">
+                                            <h3 class="class-title">LEAFY *</h3>
+                                        </a>
                                     </div>
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#c86ab7;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion5" href="#inside14" class="fam" data-description-file="descriptions/description_C3HZincFinger.html">C3H zinc finger factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside14" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_GRF.html">GRF</a>
-                                            </div>
-                                        </div>
+                                    <div class="class-HTH" style="text-align: center;">
+                                        <a data-description-file="descriptions/class/description_HelixTurnHelix_RWPRK.html">
+                                            <h3 class="class-title">RWP-RK *</h3>
+                                        </a>
                                     </div>
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#c86ab7;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion5" href="#inside15" class="fam" data-description-file="descriptions/description_HC3ZincRibbon.html">HC3 zinc ribbon factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside15" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_ALOG.html">ALOG</a>
+            
+                                </div>
+            
+                                <!-- Forked Winged + HSF  -->
+                                <div class="block-6-HTH">
+                                    <div class="class-HTH">
+                                        <a data-description-file="descriptions/class/description_HelixTurnHelix_ForkHead.html">
+                                            <h3 class="class-title">Fork head / winged helix factors</h3>
+                                            <div class="family-HTH">
+                                                <!-- <a data-description-file="descriptions/family/description_E2F.html"> -->
+                                                    <h4 class="family-title">E2F</h4>
+                                                </a>
                                             </div>
-                                        </div>
                                     </div>
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#c86ab7;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion5" href="#inside16" class="fam" data-description-file="descriptions/description_C3H-C2HCZincFingerLike.html">C3H(C),C2HC zinc-finger like factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside16" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_SBP.html">SBP</a>
+            
+                                    <div class="class-HTH">
+                                        <a data-description-file="descriptions/class/description_HelixTurnHelix_HeatShock.html">
+                                            <h3 class="class-title">Heat Shock  <br>factors</h3>
+                                            <div class="family-HTH">
+                                                <!-- <a data-description-file="descriptions/family/description_HSF.html"> -->
+                                                    <h4 class="family-title">HSF</h4>
+                                                </a>
                                             </div>
-                                        </div>
                                     </div>
+            
                                 </div>
                             </div>
+            
                         </div>
-                    </div>
-
-                    <!-- END SuperClass -->
-
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color:#989933;">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#title6" class="accordion-link" class="fam" data-description-file="descriptions/superclass/description_BetaBarrel.html">Beta-Barrel DNA-binding domains</a>
-                            </h4>
-                        </div>
-                        <div id="title6" class="collapse">
-                            <div class="panel-body">
-                                <div class="panel-group" id="accordion6">
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#b9b95f;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion6" href="#inside17" class="fam" data-description-file="descriptions/description_B3.html">B3</a>
-                                            </h4>
+            
+                </a>
+            </div>
+            </div>
+            
+            <div class="second-line">
+            
+                <!-- BETAHAIRPIN -->
+                <div class="superclass-BetaHairpin">
+                    <a data-description-file="descriptions/superclass/description_BetaHairpin.html">
+                        <h2 class="superclass-title">Beta-Hairpin exposed by an alpha/beta-scaffold</h2>
+            
+                        <!-- GCM | AP2ERFDREB -->
+                        <div class="block-1-BetaHairpin">
+            
+                            <!-- GCM -->
+                            <div class="class-BetaHairpin">
+                                <a data-description-file="descriptions/class/description_BetaHairpin_GCM.html">
+                                    <h3 class="class-title">GCM domain factors</h3>
+            
+                                    <!-- FAMILIES 2x2 -->
+                                    <!-- NAC + WRKY -->
+                                    <div class="block-2-BetaHairpin">
+                                        <div class="family-BetaHairpin">
+                                            <!-- <a data-description-file="descriptions/family/description_NAC.html"> -->
+                                                <h4 class="family-title">NAC *</h4>
+                                            </a>
                                         </div>
-                                        <div id="inside17" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_ARF.html">ARF</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_LAV.html">LAV</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_RAV.html">RAV</a>
-                                            </div>
+                                        <div class="family-BetaHairpin">
+                                            <!-- <a data-description-file="descriptions/family/description_WRKY.html"> -->
+                                                <h4 class="family-title">WRKY *</h4>
+                                            </a>
                                         </div>
                                     </div>
+                                    <!-- VOZ + CAMTA -->
+                                    <div class="block-2-BetaHairpin">
+                                        <div class="family-BetaHairpin">
+                                            <!-- <a data-description-file="descriptions/family/description_VOZ.html"> -->
+                                                <h4 class="family-title">VOZ *</h4>
+                                            </a>
+                                        </div>
+                                        <div class="family-BetaHairpin">
+                                            <!-- <a data-description-file="descriptions/family/description_CAMTA.html"> -->
+                                                <h4 class="family-title">CAMTA *</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- FRS/FRF -->
+                                    <div class="family-BetaHairpin">
+                                        <!-- <a data-description-file="descriptions/family/description_FRSFRF.html"> -->
+                                            <h4 class="family-title">FRS / FRF *</h4>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+            
+                            <!-- AP2/ERFDREB -->
+                            <div class="class-BetaHairpin">
+                                <a data-description-file="descriptions/class/description_BetaHairpin_AP2.html">
+                                    <h3 class="class-title">AP2 / EREBP *</h3>
+            
+                                    <!-- AP2 + ERFDREB  -->
+                                    <!-- AP2 -->
+                                    <div class="family-BetaHairpin">
+                                        <!-- <a data-description-file="descriptions/family/description_AP2.html"> -->
+                                            <h4 class="family-title">AP2</h4>
+                                        </a>
+                                    </div>
+                                    <!-- ERF/DREB -->
+                                    <div class="family-BetaHairpin">
+                                        <!-- <a data-description-file="descriptions/family/description_ERFDREB.html"> -->
+                                            <h4 class="family-title">ERF / DREB</h4>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            
+                <!-- OTHERALLAPLHAHELICAL -->
+            
+                <div class="superclass-OtherAllAlphaHelical">
+                    <a data-description-file="descriptions/superclass/description_OtherAllAlphaHelical.html">
+                        <h2 class="superclass-title">Other all-alpha-helical DNA-binding domains</h2>
+            
+                        <!-- Heteromeric | HMG + EIL -->
+            
+                        <div class="block-1-OtherAllAlphaHelical">
+            
+                            <!-- Heteromeric -->
+                            <div class="class-OtherAllAlphaHelical">
+                                <a data-description-file="descriptions/class/description_OtherAllAlphaHelical_Heteromeric.html">
+                                    <h3 class="class-title">Heteromeric CCAAT-binding factors </h3>
+                                    <div class="family-OtherAllAlphaHelical">
+                                        <!-- <a data-description-file="descriptions/family/description_CONSTANS.html"> -->
+                                            <h4 class="family-title">CONSTANS *</h4>
+                                        </a>
+                                    </div>
+                                    <div class="family-OtherAllAlphaHelical">
+                                        <!-- <a data-description-file="descriptions/family/description_NF-YA.html"> -->
+                                            <h4 class="family-title">NF-YA</h4>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+            
+                            <!-- HMG + EIL -->
+                            <div class="block-2-OtherAllAlphaHelical">
+                                <!-- HMG -->
+                                <div class="class-OtherAllAlphaHelical">
+                                    <a data-description-file="descriptions/class/description_OtherAllAlphaHelical_HMG.html">
+                                        <h3 class="class-title">HMG domain factors</h3>
+                                        <div class="family-OtherAllAlphaHelical">
+                                            <!-- <a data-description-file="descriptions/family/description_YABBY.html"> -->
+                                                <h4 class="family-title">YABBY *</h4>
+                                            </a>
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- END SuperClass -->
-
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color:#4db2e6;">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#title7" class="accordion-link" class="fam" data-description-file="descriptions/superclass/description_BasicDomains.html">Basic domains</a>
-                            </h4>
-                        </div>
-                        <div id="title7" class="collapse">
-                            <div class="panel-body">
-                                <div class="panel-group" id="accordion7">
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#80cbf2;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion7" href="#inside18" class="fam" data-description-file="descriptions/description_bHLH.html">Basic helix-loop-helix factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside18" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_bHLH.html">bHLH</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_BESBZR.html">BES/BZR</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#80cbf2;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion7" href="#inside19" class="fam" data-description-file="descriptions/description_bZIP.html">Basic leucine zipper factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside19" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_bZIP.html">bZIP</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <!-- EIL -->
+                                <div class="class-OtherAllAlphaHelical">
+                                    <a data-description-file="descriptions/class/description_OtherAllAlphaHelical_EIL.html">
+                                        <h3 class="class-title" style="text-align: center;">EIL *</h3>
+                                    </a>
                                 </div>
+            
                             </div>
+            
                         </div>
-                    </div>
-
-                    <!-- END SuperClass -->
-
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color:#cc6576;">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#title8" class="accordion-link" class="fam" data-description-file="descriptions/superclass/description_AlphaHelices.html">Alpha-Helices exposed by beta-structures</a>
-                            </h4>
-                        </div>
-                        <div id="title8" class="collapse">
-                            <div class="panel-body">
-                                <div class="panel-group" id="accordion8">
-                                    <div class="panel">
-                                        <div class="panel-heading" style="background-color:#ea97a5;">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion8" href="#inside20" class="fam" data-description-file="descriptions/description_MADS.html">MADS box factors</a>
-                                            </h4>
-                                        </div>
-                                        <div id="inside20" class="collapse">
-                                            <div class="panel-body">
-                                                <a class="fam" data-description-file="descriptions/description_TypeI.html">Type I</a><br>
-                                                <a class="fam" data-description-file="descriptions/description_MIKC.html">MIKC</a>
-                                            </div>
-                                        </div>
+            
+                    </a>
+                </div>
+            
+                <!-- BETASHEET -->
+            
+                <div class="superclass-BetaSheet">
+                    <a data-description-file="descriptions/superclass/description_BetaSheet.html">
+                        <h2 class="superclass-title">Beta-Sheet binding to DNA</h2>
+            
+                        <!-- ATHook + TCP -->
+            
+                        <div class="block-1-BetaSheet">
+            
+                            <!-- ATHook -->
+                            <div class="class-BetaSheet">
+                                <a data-description-file="descriptions/class/description_BetaSheet_ATHook.html">
+                                    <h3 class="class-title">AT-hook factors</h3>
+                                    <!-- HMGA -->
+                                    <div class="family-BetaSheet">
+                                        <!-- <a data-description-file="descriptions/family/description_HMGA.html"> -->
+                                            <h4 class="family-title">HMGA</h4>
+                                        </a>
                                     </div>
-                                </div>
+                                    <!-- AHL -->
+                                    <div class="family-BetaSheet">
+                                        <!-- <a data-description-file="descriptions/family/description_AHL.html"> -->
+                                            <h4 class="family-title">AHL *</h4>
+                                        </a>
+                                    </div>
+            
+                                </a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- END SuperClass -->
-
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color:#127733;">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#title9" class="accordion-link" class="fam" data-description-file="descriptions/superclass/description_YetUndefined.html">Yet undefined DNA-binding domains</a>
-                            </h4>
-                        </div>
-                        <div id="title9" class="collapse">
-                            <div class="panel-body">
-                                <a class="fam" data-description-file="descriptions/description_BBRBPC.html">BBR/BPC</a><br>
-                                <a class="fam" data-description-file="descriptions/description_CPP.html">CPP</a><br>
-                                <a class="fam" data-description-file="descriptions/description_DBP.html">DBP</a><br>
-                                <a class="fam" data-description-file="descriptions/description_PLATZ.html">PLATZ</a><br>
-                                <a class="fam" data-description-file="descriptions/description_GRAS.html">GRAS</a><br>
-                                <a class="fam" data-description-file="descriptions/description_S1Fa-like.html">S1Fa-like</a>
+                            <!-- TCP -->
+                            <div class="class-BetaSheet">
+                                <a data-description-file="descriptions/class/description_BetaSheet_TCP.html">
+                                    <h3 class="class-title" style="text-align: center;">TCP *</h3>
+                                </a>
                             </div>
+            
                         </div>
-                    </div>
-
-                    <!-- END SuperClass -->
-                     
+                    </a>
                 </div>
             </div>
-        </div>
+            
+            <div class="third-line">
+            
+                <!-- SUPERCLASS: ZINC-COORDINATING -->
+                <div class="superclass-ZincCoordinating">
+                    <a data-description-file="descriptions/superclass/description_ZincCoordinating.html">
+                    <h2 class="superclass-title">Zinc-Coordinating DNA-binding domains</h2>
+            
+                    <!-- CLASSES: OtherC4zf C3Hzf | C2H2zf + HC3zrf-->
+                    <div class="block-1-ZincCoordinating">
+            
+                        <!--CLASSES: OtherC4zf C3Hzf   -->
+                        <div class="block-2-ZincCoordinating">
+            
+                            <!-- CLASS: OtherC4zf -->
+                            <div class="class-ZincCoordinating">
+                                <a data-description-file="descriptions/class/description_ZincCoordinating_OtherC4zf.html">
+                                    <h3 class="class-title">Other C4 zinc finger-type factors</h3>
+                                </a>
+                                <!-- FAMILIES: DOF + LBD -->
+            
+                                <div class="block-4-ZincCoordinating">
+                                    <!-- DOF -->
+                                    <div class="family-ZincCoordinating">
+                                        <!-- <a data-description-file="descriptions/family/description_DOF.html"> -->
+                                            <h4 class="family-title">DOF *</h4>
+                                        </a>
+                                    </div>
+                                    <!-- LBD -->
+                                    <div class="family-ZincCoordinating">
+                                        <!-- <a data-description-file="descriptions/family/description_LBD.html"> -->
+                                            <h4 class="family-title">LBD *</h4>
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div class="family-ZincCoordinating">
+                                    <!-- <a data-description-file="descriptions/family/description_C4-GATA-related.html"> -->
+                                        <h4 class="family-title">C4-GATA-related</h4>
+                                    </a>
+                                </div>
+            
+                            </div>
+            
+                            <!-- CLASS:  C3Hzf-->
+                            <div class="class-ZincCoordinating">
+                                <a data-description-file="descriptions/class/description_ZincCoordinating_C3Hzf.html">
+                                    <h3 class="class-title">C3H zinc finger factors</h3>
+                                </a>
+                                <div class="family-ZincCoordinating">
+                                    <!-- <a data-description-file="descriptions/family/description_GRF.html"> -->
+                                        <h4 class="family-title">GRF *</h4>
+                                    </a>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                        <!-- CLASSES: C2H2zf + HC3zrf -->
+                        <div class="block-3-ZincCoordinating">
+            
+                            <!-- CLASS:  C2H2zf-->
+                            <div class="class-ZincCoordinating">
+                                <a data-description-file="descriptions/class/description_ZincCoordinating_C2H2zf.html">
+                                    <h3 class="class-title">C2H2 zinc finger factors</h3>
+                                </a>
+                                <div class="block-5-ZincCoordinating">
+                                    <!-- C2H2 -->
+                                    <div class="family-ZincCoordinating">
+                                        <!-- <a data-description-file="descriptions/family/description_C2H2.html"> -->
+                                            <h4 class="family-title">C2H2</h4>
+                                        </a>
+                                    </div>
+                                    <!-- IDD -->
+                                    <div class="family-ZincCoordinating">
+                                        <!-- <a data-description-file="descriptions/family/description_IDD.html"> -->
+                                            <h4 class="family-title">IDD *</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- CLASS HC3zrf-->
+                            <div class="class-ZincCoordinating">
+                                <a data-description-file="descriptions/class/description_ZincCoordinating_HC3zrf.html">
+                                    <h3 class="class-title">HC3 zinc ribbon factors *</h3>
+                                </a>
+                                <div class="family-ZincCoordinating">
+                                    <!-- <a data-description-file="descriptions/family/description_ALOG.html"> -->
+                                        <h4 class="family-title">ALOG</h4>
+                                    </a>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                    </div>
+            
+                    <!-- CLASS: C3HCC2HCzflike -->
+                    <div class="class-ZincCoordinating">
+                        <a data-description-file="descriptions/class/description_ZincCoordinating_C3HCC2HCzflike.html">
+                            <h3 class="class-title">C3H(C),C2HC zinc-fingers like factors *</h3>
+            
+                            <div class="family-ZincCoordinating">
+                                <!-- <a data-description-file="descriptions/family/description_SBP.html"> -->
+                                    <h4 class="family-title">SBP</h4>
+                                </a>
+                            </div>
+                        </a>
+            
+                    </div>
+            
+                </div>
+            
+                <!-- SUPERCLASS: BETA-BARREL -->
+                <div class="superclass-BetaBarrel">
+                    <a data-description-file="descriptions/superclass/description_BetaBarrel.html"> 
+                    <h2 class="superclass-title">Beta- <br> Barrel <br> DNA-binding domains</h2>
+            
+                    <!-- CLASS: B3 -->
+                    <div class="class-BetaBarrel">
+                        <a data-description-file="descriptions/class/description_BetaBarrel_B3.html">
+                            <h3 class="class-title">B3 *</h3>
+                        </a>
+            
+                        <!-- FAMILY: LAV -->
+                        <div class="family-BetaBarrel">
+                            <!-- <a data-description-file="descriptions/family/description_LAV.html"> -->
+                                <h4 class="family-title">LAV</h4>
+                            </a>
+                        </div>
+            
+                        <!-- FAMILY: RAV -->
+                        <div class="family-BetaBarrel">
+                            <!-- <a data-description-file="descriptions/family/description_RAV.html"> -->
+                                <h4 class="family-title">RAV</h4>
+                            </a>
+                        </div>
+            
+                        <!-- FAMILY: ARF -->
+                        <div class="family-BetaBarrel">
+                            <!-- <a data-description-file="descriptions/family/description_ARF.html">  -->
+                                <h4 class="family-title">ARF</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="column">
+            
+                    <!-- SUPERCLASS: BASIC -->
+                    <div class="superclass-Basic">
+                        <a data-description-file="descriptions/superclass/description_BasicDomains.html">
+                        <h2 class="superclass-title">Basic domains</h2>
+            
+                        <!-- CLASS: bHLH -->
+                        <div class="class-Basic">
+                            <a data-description-file="descriptions/class/description_BasicDomains_bHLH.html">
+                                <h3 class="class-title">Basic helix-loop-helix factors</h3>
+                            </a>
+                            <div class="block-1-Basic">
+                                <!-- FAMILY: bHLH -->
+                                <div class="family-Basic">
+                                    <!-- <a data-description-file="descriptions/family/description_bHLH.html"> -->
+                                        <h4 class="family-title">bHLH</h4>
+                                    </a>
+                                </div>
+
+                                <!-- FAMILY: BESBZR -->
+                                <div class="family-Basic">
+                                    <!-- <a data-description-file="descriptions/family/description_BESBZR.html"> -->
+                                        <h4 class="family-title">BES / BZR *</h4>
+                                    </a>
+                                </div>
+                                                                
+                            </div>
+                            
+                        </div>
+            
+                        <!-- CLASS: bZIP -->
+                        <div class="class-Basic">
+                            <a data-description-file="descriptions/class/description_BasicDomains_bZIP.html">
+                                <h3 class="class-title">Basic leucine zipper factors</h3>
+                            </a>
+            
+                            <!-- FAMILY: bZIP -->
+                            <div class="family-Basic">
+                                <!-- <a data-description-file="descriptions/family/description_bZIP.html"> -->
+                                    <h4 class="family-title">bZIP</h4>
+                                </a>
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <!-- SUPERCLASS: AlphaHelices -->
+                    <div class="superclass-AlphaHelices">
+                        <a data-description-file="descriptions/superclass/description_AlphaHelices.html">
+                        <h2 class="superclass-title">Alpha-helices exposed by beta-structures</h2>
+            
+                        <!-- CLASS: MADS -->
+                         
+                            <div class="class-AlphaHelices">
+                                <a data-description-file="descriptions/class/description_AlphaHelices_MADS.html">
+                                    <h3 class="class-title">MADS box factors</h3>
+                                </a>
+                                <div class="block-1-AlphaHelices">
+
+                                   <!-- FAMILY: TypeI -->
+                                    <div class="family-AlphaHelices">
+                                        <!-- <a data-description-file="descriptions/family/description_TypeI.html"> -->
+                                            <h4 class="family-title">Type I</h4>
+                                        </a>
+                                    </div>
+                    
+                                    <!-- FAMILY: TypeII -->
+                                    <div class="family-AlphaHelices">
+                                        <!-- <a data-description-file="descriptions/family/description_TypeII.html"> -->
+                                            <h4 class="family-title">Type II *</h4>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </div>
+            
+                </div>
+            
+            </div>
+            
+            <!-- SUPERCLASS: YETUNDEFINED -->
+            <div class="superclass-YetUndefined">
+                <a data-description-file="descriptions/superclass/description_YetUndefined.html">
+                <h2 class="superclass-title">Yet undefined <br> DNA-binding domains</h2>
+            
+                <!-- BBRBBPC -->
+                <div class="class-YetUndefined">
+                    <a data-description-file="descriptions/class/description_YetUndefined_BBRBBPC.html">
+                        <h3 class="class-title">BBR / BCP</h3>
+                    </a>
+                </div>
+            
+                <!-- CPP -->
+                <div class="class-YetUndefined">
+                    <a data-description-file="descriptions/class/description_YetUndefined_CPP.html">
+                        <h3 class="class-title">CPP</h3>
+                    </a>
+                </div>
+            
+                <!-- DBP -->
+                <div class="class-YetUndefined">
+                    <a data-description-file="descriptions/class/description_YetUndefined_DBP.html">
+                        <h3 class="class-title">DBP</h3>
+                    </a>
+                </div>
+            
+                <!-- GRAS -->
+                <div class="class-YetUndefined">
+                    <a data-description-file="descriptions/class/description_YetUndefined_GRAS.html">
+                        <h3 class="class-title">GRAS</h3>
+                    </a>
+                </div>
+            
+                <!-- PLATZ -->
+                <div class="class-YetUndefined">
+                    <a data-description-file="descriptions/class/description_YetUndefined_PLATZ.html">
+                        <h3 class="class-title">PLATZ</h3>
+                    </a>
+                </div>
+            
+                <!-- S1Fa-like -->
+                <div class="class-YetUndefined">
+                    <a data-description-file="descriptions/class/description_YetUndefined_S1Falike.html">
+                        <h3 class="class-title">SAFa-like</h3>
+                    </a>
+                </div>
+            
+            </div>
+            
+    </div>
         <div class="right-panel" id="right-panel">
 
             <div id="additional-text-div" class="additional-content">
@@ -512,6 +697,8 @@
             </div>
         </div>
     </div>
+
+
 </body>
 
 <footer>
@@ -525,104 +712,34 @@
     <p class="text-footer">Contact (X): @romain_bm | @turchi_l | @Francois_Parcy </p>
 
 </footer>
+<script>
+    $(document).ready(function(){
+        var defaultDescriptionFile = 'descriptions/default-page.html';
+        var currentDescriptionFile = defaultDescriptionFile; // Variable pour suivre le fichier actuel
 
-		<script>
-$(document).ready(function(){
-    var currentMainPanelDescription = '';
-    var initialSubPanelDescriptions = {};
-    var currentClassif = 'SUPERCLASS';
-    var defaultDescriptionFile = 'descriptions/default-page.html';
-    // Load .html files as a frame on the right part of the screen
-    function loadDescription(file, isDefault = false) {
-        $('#additional-text-div').html('<iframe src="' + file + '" width="100%" height="100%" style="border: none;"></iframe>');
-        if (isDefault) {
-            currentMainPanelDescription = $('#additional-text-div').html();
-        }
-    }
-
-    function updateClassifHeader(classif) {
-        $('#additionnal-head-classif').text(classif);
-    }
-
-    // Load the default description when the document is ready
-    loadDescription(defaultDescriptionFile, true);
-    updateClassifHeader('SUPERCLASS');
-
-    $('.accordion-link').on('click', function(e){
-        e.preventDefault();
-        var panelId = $(this).attr('href');
-        var descriptionFile = $(this).data('description-file');
-
-        if($(panelId).is(':visible')){
-            $('#additional-text-div').empty();
-            currentMainPanelDescription = '';
-            updateClassifHeader('SUPERCLASS');
-        } else {
-            loadDescription(descriptionFile);
-            currentMainPanelDescription = $('#additional-text-div').html();
-            updateClassifHeader('SUPERCLASS | CLASS');
+        // Charge le fichier HTML dans un iframe
+        function loadDescription(file) {
+            currentDescriptionFile = file; // Met à jour le fichier actuel
+            $('#additional-text-div').html('<iframe src="' + file + '" width="100%" height="100%" style="border: none;"></iframe>');
         }
 
-        // Close sub-panels when closing main panel
-        $(panelId).find('.collapse').collapse('hide');
-    });
+        // Charge la description par défaut au démarrage
+        loadDescription(defaultDescriptionFile);
 
-    $('.panel-title a').not('.accordion-link').on('click', function(e){
-        e.preventDefault();
-        var panelId = $(this).attr('href');
-        var descriptionFile = $(this).data('description-file');
+        // Gestion du clic sur les liens
+        $('a[data-description-file]').on('click', function(e){
+            e.preventDefault();
+            var descriptionFile = $(this).data('description-file');
 
-        if($(panelId).is(':visible')){
-            $('#additional-text-div').html(initialSubPanelDescriptions[panelId]);
-            updateClassifHeader('SUPERCLASS | CLASS');
-        } else {
-            initialSubPanelDescriptions[panelId] = $('#additional-text-div').html();
-            loadDescription(descriptionFile);
-            updateClassifHeader('SUPERCLASS | CLASS | FAMILY');
-        }
-
-        // Close sub-panels when closing main panel
-        $(panelId).find('.collapse').collapse('hide');
-
-        // Close other sub-panels when opening another sub-panel (one at the time)
-        $('.panel-title a').not(this).each(function(){
-            var otherPanelId = $(this).attr('href');
-            $(otherPanelId).find('.collapse').collapse('hide');
+            // Si on reclique sur le même lien, on recharge la page par défaut
+            if (descriptionFile === currentDescriptionFile) {
+                loadDescription(defaultDescriptionFile);
+            } else {
+                loadDescription(descriptionFile);
+            }
         });
     });
+</script>
 
-    $('.fam').on('click', function(e){
-        e.preventDefault();
-        var panelId = $(this).attr('href');
-        var descriptionFile = $(this).data('description-file');
-
-        // Store the initial description of the sub-panel
-        initialSubPanelDescriptions[panelId] = $('#additional-text-div').html();
-
-        loadDescription(descriptionFile);
-        currentMainPanelDescription = $('#additional-text-div').html();
-    });
-
-    // Restore initial description when closing sub-panel
-    $('.panel-title a').not('.accordion-link').on('hidden.bs.collapse', function(e){
-        var panelId = $(this).attr('href');
-        $('#additional-text-div').html(initialSubPanelDescriptions[panelId]);
-    });
-
-    // Restore default description when closing main panel
-    $('.accordion-link').on('hidden.bs.collapse', function(e){
-        loadDescription(defaultDescriptionFile, true);
-        updateClassifHeader('SUPERCLASS');
-    });
-
-    // Restore default description when closing any panel
-    $('.collapse').on('hidden.bs.collapse', function(e){
-        if ($('.collapse.in').length === 0) {
-            loadDescription(defaultDescriptionFile, true);
-            updateClassifHeader('SUPERCLASS');
-        }
-    });
-});
-		</script>
 
 </html>

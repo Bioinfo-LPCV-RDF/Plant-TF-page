@@ -1,4 +1,7 @@
 
+/* ============================= */
+/* Fonts                         */
+/* ============================= */
 @font-face {
     font-family: 'TitleFont';
     src: URL('fonts/CaviarDreams_Bold.ttf') format('truetype');
@@ -9,16 +12,69 @@
     src: URL('fonts/CaviarDreams.ttf') format('truetype');
   }
 
-.logo {
-    margin-bottom: 20;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover,
+  a:focus{
+    text-decoration: none;
+    color: inherit;
+  }
+
+/* ============================= */
+/* Images                        */
+/* ============================= */
+.logo-instit {
+    margin-left:2%;
+    margin-right:2%;
+    margin-bottom: 2%;
 }
 
+.logo-TF {
+    margin-top: 5rem;
+    margin-bottom:2%;
+    width: 35rem;
+    height: 15rem;
+    
+}
+
+/* ============================= */
+/* Base                          */
+/* ============================= */
 body {
     font-family: Calibri, sans-serif;
     background-color: #ffffff00;
     padding-top: 3%;
+    font-size: 1.7rem;
 }
 
+.whole-padding {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.split {
+    display: flex;
+}
+
+h1 {
+    font-family: "TitleFont", sans-serif;
+    color: #242424;
+    font-size:4rem;
+}
+
+h2 {
+    font-family: "TitleFont", sans-serif;
+    color: #242424;
+    font-size:2rem;
+}
+
+
+/* ============================= */
+/* Header                        */
+/* ============================= */
 .container-header {
     display: flex;
     align-items: center;
@@ -30,120 +86,55 @@ body {
 .content-header {
     flex: 1;
     padding-left: 3%;
-}
-
-.padding-15 {
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-.institutions {
-    align-items: left;
-    margin-bottom: 100;
-}
-
-.logo-instit {
-    margin-left:20;
-    margin-right:20;
-}
-
-.logo-TF {
-    width:35%;
-    height: 35%;
-    margin-bottom:0;
-}
-
-.quote {
-    font-size: 15;
-    color: #929292;
-}
-
-.en-tete {
-    margin-bottom: 30;
-    margin-top: 20;
-    display: flex;
-    align-items: top;
-    padding-right: 15%;
-    padding-left: 15%;
-}
-
-hr {
-    border: 1px solid rgb(187, 187, 187);
-    width:90%;
-    margin: 20px auto; 
-    margin-bottom: 40;
-}
-.classif {
-    width: 20%;
-    height: auto;
-}
-
-.split {
-    display: flex;
-}
-
-.left-panel {
-    width: 50%;
-    color: white;
-    font-size: 10;
-}
-
-.accordion-link {
-    font-size: 18;
-}
-
-.right-panel {
-    width: 50%;
-    padding-left: 3%;
-}
-
-h1 {
-    font-family: "TitleFont", sans-serif;
-    color: #242424;
-    font-size:38;
-}
-
-h2 {
-    color: #474747;
-}
-
-.panel {
-    color: white;
-    font-size: 17;
-    width:250;
-    border: 1px solid rgb(216, 216, 216);
-}
-
-.panel-heading {
-    align-items: center;
-    text-align: center;
-    width:250;
-    font-size: 17;
-    color: white;
-}
-
-.panel-title {
-    font-size: 17;
-}
-
-.container {
-    padding:0;
-    margin:0;
-    font-size: 17;
-    margin-bottom: 500;
-}
-
-.collapse {
-    display: none;
-    font-size: 17;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.5;
     text-align: justify;
 }
 
+.quote {
+    font-size: 2rem;
+    color: #929292;
+}
+
+
+
+
+/* ============================= */
+/* Right-box (descriptions)      */
+/* ============================= */
+.right-panel {
+    width: 45%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-right: 0;
+}
+
+/* ============================= */
+/* Left-box (classification)     */
+/* ============================= */
+
+
+.left-panel {
+    width: 55%;
+    color: white;
+    padding-right: 10rem;
+    padding-left: 3rem;
+    margin-right: 0;
+}
+
+.legend {
+    font-size: 1.5rem;
+    color: #929292;
+    text-align: justify;
+    width: 80%;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    margin-left: 6%;
+    
+}
+
+
+/* ============================= */
+/* Footer                        */
+/* ============================= */
 footer {
     background-color: #f0f0f0;
     margin-top: 30;
@@ -152,24 +143,17 @@ footer {
 }
 
 .text-footer {
-    font-size: 15px;
+    font-size: 1.5rem;
     text-align: center;
     padding-left:40%;
     padding-right:40%;
 }
 
 .text-footer-j {
-    font-size: 15px;
+    font-size: 1.5rem;
     text-align: justify;
     padding-left:40%;
     padding-right:40%;
-}
-
-.classif-head {
-    font-size: 15;
-    font-family: "TitleFont", sans-serif;
-    color:rgb(92, 92, 92);
-    margin-bottom:10;
 }
 
 
@@ -177,92 +161,84 @@ footer {
 /* Table  */
 /* ######################################### */
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
+/* BASE */
 .superclass-title {
     color: white;
     padding-left: 2%;
-    font-size: 35px;
+    font-size: 2rem;
     font-family: "Calibri", sans-serif;
-    margin-top: 2px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     align-items: center;
 }
 
 .class-title {
     color: white;
     padding-left: 4%;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-family: 'Calibri', sans-serif;
     margin: 0;
-    margin-top: 2px;
-    margin-bottom: 3px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     align-items: center;
 }
 
 .family-title {
     color: rgb(0, 0, 0);
     padding: 2%;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: 'Calibri', sans-serif;
     margin: 0;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
     text-align: center;
     align-items: center;
 }
 
-
+/* Helix Turn Helix */
 .superclass-HTH {
     background-color: #882254;
-    margin: 3px;
-    padding: 10px;
+    margin: 0.25rem;
+    padding: 0.25rem;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     align-items: center;
-    /* font-size: 0; */ /* Remove or adjust if text needs to be visible */
 }
+
 .class-HTH {
     background-color: #882254;
-    border: 1px solid white;
+    border: 0.025rem solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     padding: 1%;
     margin: 1%;
     align-items: center;
-    
 }
-
 
 .family-HTH {
     background-color: #FFFFFF70;
-    margin: 3px;
+    margin: 0.25rem;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     align-items: center;
 }
 
 .block-1-HTH {
     display: flex;
-    flex: 1;
     
 }
 
 .block-2-HTH {
     display: flex;
-    flex: 1;
 
 }
 .block-3-HTH {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 20%;
     }
 .block-4-HTH {
     display: flex;
@@ -280,21 +256,19 @@ a {
     flex: 70%;
 }
 
-
-
+/* SEPARATION */
 .second-line {
     display: flex;
     flex: 1;
 }
 
-
-
+/* BETA HAIRPIN */
 .superclass-BetaHairpin {
     background-color: #D0B945;
-    margin: 3px;
-    padding: 10px;
+    margin: 0.25rem;
+    padding: 0.5rem;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 0.5;
     align-items: center;
 }
@@ -303,7 +277,7 @@ a {
     background-color: #D0B945;
     border: 1px solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     padding: 1%;
     margin: 1%;
@@ -313,9 +287,9 @@ a {
 
 .family-BetaHairpin {
     background-color: #FFFFFF70;
-    margin: 3px;
+    margin: 0.25rem;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     align-items: center;
 }
@@ -331,12 +305,12 @@ a {
     flex: 1;
 }
 
-
+/* OTHER ALL ALPHA HELICES */
 .superclass-OtherAllAlphaHelical {
-    margin: 3px;
-    padding: 10px;
+    margin: 0.25rem;
+    padding: 0.5rem;
     background-color: #44AB9A;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 0.3;
 }
 
@@ -344,7 +318,7 @@ a {
     background-color: #44AB9A;
     border: 1px solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     padding: 1%;
     margin: 1%;
@@ -353,9 +327,9 @@ a {
 
 .family-OtherAllAlphaHelical {
     background-color: #FFFFFF70;
-    margin: 3px;
+    margin: 0.25rem;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
 }
 
@@ -370,12 +344,12 @@ a {
     flex: 1;
 }
 
-
+/* BETASHEET */
 .superclass-BetaSheet {
-    margin: 3px;
-    padding: 10px;
+    margin: 0.25rem;
+    padding: 0.5rem;
     background-color: #332288;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 0.2;
 }
 
@@ -383,7 +357,7 @@ a {
     background-color: #332288;
     border: 1px solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     padding: 1%;
     margin: 1%;
@@ -392,9 +366,9 @@ a {
 
 .family-BetaSheet {
     background-color: #FFFFFF70;
-    margin: 3px;
+    margin: 0.25rem;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
 }
 
@@ -405,19 +379,18 @@ a {
 }
 
 
-
+/* SEPARATION */
 .third-line {
     display: flex;
     flex: 1;
 }
 
-
-
+/* ZINC COORDINATING */
 .superclass-ZincCoordinating {
-    margin: 3px;
-    padding: 10px;
+    margin: 0.25rem;
+    padding: 0.5rem;
     background-color: #AA4498;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 70%;
 }
 
@@ -425,7 +398,7 @@ a {
     background-color: #AA4498;
     border: 1px solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     padding: 1%;
     margin: 1%;
@@ -434,9 +407,9 @@ a {
 
 .family-ZincCoordinating {
     background-color: #FFFFFF70;
-    margin: 3px;
+    margin: 0.25rem;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
 }
 
@@ -467,19 +440,20 @@ a {
     flex: 1;
 }
 
+/* BETABARREL */
 .superclass-BetaBarrel {
-    margin: 3px;
-    padding: 10px;
+    margin: 0.25rem;
+    padding: 0.5rem;
     background-color: #989933;
-    border-radius: 10px;
-    flex: 20%;
+    border-radius: 1rem;
+    flex: 30%;
 }
 
 .class-BetaBarrel {
     background-color: #989933;
     border: 1px solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 0.15;
     padding: 1%;
     margin: 1%;
@@ -489,17 +463,18 @@ a {
 
 .family-BetaBarrel {
     background-color: #FFFFFF70;
-    margin: 3px;
+    margin: 0.25rem;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
 }
 
+/* BASIC */
 .superclass-Basic {
-    margin: 3px;
-    padding: 10px;
+    margin: 0.25rem;
+    padding: 0.5rem;
     background-color: #4DB2E6;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 15%;
 }
 
@@ -507,7 +482,7 @@ a {
     background-color: #4DB2E6;
     border: 1px solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     padding: 1%;
     margin: 1%;
@@ -516,9 +491,9 @@ a {
 
 .family-Basic {
     background-color: #FFFFFF70;
-    margin: 3px;
+    margin: 0.25rem;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
 }
 
@@ -527,11 +502,12 @@ a {
     flex: 1;
 }
 
+/* ALPHA HELICES */
 .superclass-AlphaHelices {
-    margin: 3px;
-    padding: 10px;
+    margin: 0.25rem;
+    padding: 0.5rem;
     background-color: #CC6576;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 15%;
 }
 
@@ -539,7 +515,7 @@ a {
     background-color: #CC6576;
     border: 1px solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     padding: 1%;
     margin: 1%;
@@ -548,9 +524,9 @@ a {
 
 .family-AlphaHelices {
     background-color: #FFFFFF70;
-    margin: 3px;
+    margin: 0.25rem;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
 }
 
@@ -559,11 +535,12 @@ a {
     flex: 1;
 }
 
+/* YET UNDEFINED */
 .superclass-YetUndefined {
-    margin: 3px;
-    padding: 10px;
+    margin: 0.25rem;
+    padding: 0.5rem;
     background-color: #127733;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     display: flex;
 }
@@ -572,10 +549,94 @@ a {
     background-color: #127733;
     border: 1px solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex: 1;
     padding: 1%;
     margin: 1%;
     text-align: center;
     
 }
+
+/* =========================== */
+/* Animation */
+/* =========================== */
+[class^="superclass-"]:hover,
+[class^="class-"]:hover{
+  filter: brightness(1.05); /* léger éclaircissement du panneau ET du texte */
+  transform: translateY(-3px);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+
+/* ============================= */
+/* Responsivness                 */
+/* ============================= */
+@media (max-width: 992px) { /* Tablette */
+    .container-header {
+      flex-direction: column;
+      padding: 0 5%;
+      text-align: center;
+    }
+    h1 { font-size: 3rem; }
+    .split { flex-direction: column; }
+    .text-footer, .text-footer-j {
+      padding: 0 15%;
+    }
+    .whole-padding { padding: 0 3%; }
+  }
+  
+  @media (max-width: 576px) { /* Mobile */
+    h1 { font-size: 1.6rem; text-align: center; }
+    h2 { font-size: 1.2rem; }
+    .left-panel, .right-panel { flex: 1 1 100%; }
+    .text-footer, .text-footer-j { padding: 0 5%; }
+    .logo-TF { width: 60%; }
+    .whole-padding { padding: 0 2%; }
+  }
+
+  /* Portrait (mobile ou PC vertical) */
+@media screen and (orientation: portrait) {
+    .container-header {
+      flex-direction: column;
+      padding: 0 10%;
+    }
+    .legend {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .split {
+        flex-direction: column;
+        flex: 1;
+      }
+    .text-footer, .text-footer-j {
+      padding: 0 10%;
+    }
+    .whole-padding {
+      padding: 0 5%;
+    }
+    .left-panel, .right-panel {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+    .right-panel {
+        height: 100rem;
+
+      }
+    .legend {
+        width: 100%;
+        margin-left: 0;
+      }
+  }
+  
+  /* Landscape (PC ou tablette horizontale) */
+  @media screen and (orientation: landscape) {
+    .container-header {
+      flex-direction: row;
+      padding: 0 15%;
+    }
+    .whole-padding {
+      padding: 0 5%;
+    }
+  }
