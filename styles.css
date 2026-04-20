@@ -2,7 +2,7 @@
 /* ============================= */
 /* Fonts                         */
 /* ============================= */
-@font-face {
+/* @font-face {
     font-family: 'TitleFont';
     src: URL('fonts/CaviarDreams_Bold.ttf') format('truetype');
   }
@@ -10,7 +10,7 @@
   @font-face {
     font-family: 'TitleFont';
     src: URL('fonts/CaviarDreams.ttf') format('truetype');
-  }
+  } */
 
   a {
     text-decoration: none;
@@ -60,13 +60,13 @@ body {
 }
 
 h1 {
-    font-family: "TitleFont", sans-serif;
+    font-family: Calibri, sans-serif;
     color: #242424;
     font-size:4rem;
 }
 
 h2 {
-    font-family: "TitleFont", sans-serif;
+    font-family: Calibri, sans-serif;
     color: #242424;
     font-size:2rem;
 }
