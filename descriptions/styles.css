@@ -1,35 +1,30 @@
-/* @font-face {
-    font-family: 'TitleFont';
-    src: URL('../fonts/CaviarDreams.ttf') format('truetype');
-  } */
-
 body {
     background-color: #ffffff00;
 }
 
 h1{
-	font-family: "TitleFont", sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     color: #000000;
     margin-bottom: 0.5rem;
 }
 
 h2{
-	font-family: "TitleFont", sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color: #000000;
     margin-bottom: 0.5rem;
 }
 
 p {
-    font-family: Calibri, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff00;
     font-size: 1rem;
     text-align: justify;
 }
 
 ul {
-    font-family: Calibri, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff00;
     font-size: 1rem;
     text-align: justify;

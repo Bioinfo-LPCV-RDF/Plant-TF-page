@@ -60,13 +60,13 @@ body {
 }
 
 h1 {
-    font-family: Calibri, sans-serif;
+    font-family: "TitleFont", sans-serif;
     color: #242424;
     font-size:4rem;
 }
 
 h2 {
-    font-family: Calibri, sans-serif;
+    font-family: "TitleFont", sans-serif;
     color: #242424;
     font-size:2rem;
 }
@@ -175,7 +175,7 @@ footer {
 .class-title {
     color: white;
     padding-left: 4%;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: 'Calibri', sans-serif;
     margin: 0;
     margin-top: 0.5rem;
@@ -228,11 +228,13 @@ footer {
 
 .block-1-HTH {
     display: flex;
+
     
 }
 
 .block-2-HTH {
     display: flex;
+    
 
 }
 .block-3-HTH {
@@ -560,13 +562,27 @@ footer {
 /* =========================== */
 /* Animation */
 /* =========================== */
-[class^="superclass-"]:hover,
-[class^="class-"]:hover{
-  filter: brightness(1.05); /* léger éclaircissement du panneau ET du texte */
-  transform: translateY(-3px);
-  cursor: pointer;
+[class^="class-"]:hover {
+  filter: brightness(1.1); 
   transition: all 0.25s ease-in-out;
+  /* y shift */
+  transform: translateY(-2px);
 }
+
+[class^="superclass-"]:hover {
+    filter: brightness(1.1); 
+    transition: all 0.25s ease-in-out;
+    transform: translateY(-1px);
+  }
+
+h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
 
 /* ============================= */

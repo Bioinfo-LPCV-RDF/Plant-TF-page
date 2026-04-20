@@ -75,6 +75,7 @@
             <div class="superclass-HTH">
                 <a data-description-file="descriptions/superclass/description_HelixTurnHelix.html">
                     <h2 class="superclass-title">Helix-Turn-Helix domains</h2>
+                </a>
                     <!-- BLOCK 1 : HOMEO | TRYPTOPHAN + ARID + LEAFY + RWP + Forked + HSF-->
                     <div class="block-1-HTH">
             
@@ -82,60 +83,61 @@
                         <div class="class-HTH">
                             <a data-description-file="descriptions/class/description_HelixTurnHelix_Homeo.html">
                                 <h3 class="class-title">Homeo domain factors</h3>
+                            </a>
             
                                 <!-- FAMILIES : 3 x 3-->
                                 <div class="block-2-HTH">
                                     <div class="family-HTH">
-                                        <!-- <a data-description-file="descriptions/family/description_DDT.html"> -->
+                                        
                                             <h4 class="family-title">DDT</h4>
-                                        </a>
+                                        
                                     </div>
                                     <div class="family-HTH">
-                                        <!-- <a data-description-file="descriptions/family/description_HD-ZIP.html"> -->
+                                        
                                             <h4 class="family-title">HD-ZIP</h4>
-                                        </a>
+                                        
                                     </div>
                                     <div class="family-HTH">
-                                        <!-- <a data-description-file="descriptions/family/description_LD.html"> -->
+                                        
                                             <h4 class="family-title">LD</h4>
-                                        </a>
+                                        
                                     </div>
                                 </div>
                                 <div class="block-2-HTH">
                                     <div class="family-HTH">
-                                        <!-- <a data-description-file="descriptions/family/description_PHD.html"> -->
+                                        
                                             <h4 class="family-title">PHD</h4>
-                                        </a>
+                                        
                                     </div>
                                     <div class="family-HTH">
-                                        <!-- <a data-description-file="descriptions/family/description_SAWADEE.html"> -->
+                                        
                                             <h4 class="family-title">SAWADEE</h4>
-                                        </a>
+                                        
                                     </div>
                                     <div class="family-HTH">
-                                        <!-- <a data-description-file="descriptions/family/description_PINTO.html"> -->
+                                        
                                             <h4 class="family-title">PINTO</h4>
-                                        <!-- </a> -->
+                                        
                                     </div>
                                 </div>
                                 <div class="block-2-HTH">
                                     <div class="family-HTH">
-                                        <!-- <a data-description-file="descriptions/family/description_PLINC.html"> -->
+                                        
                                             <h4 class="family-title">PLINC</h4>
-                                        </a>
+                                        
                                     </div>
                                     <div class="family-HTH">
-                                        <!-- <a data-description-file="descriptions/family/description_TALE-type-HD.html"> -->
+                                        
                                             <h4 class="family-title">TALE Type-HD</h4>
-                                        </a>
+                                        
                                     </div>
                                     <div class="family-HTH">
-                                        <!-- <a data-description-file="descriptions/family/description_WOX.html"> -->
+                                        
                                             <h4 class="family-title">WOX</h4>
-                                        </a>
+                                        
                                     </div>
                                 </div>
-                            </a>
+                            
                         </div>
             
                         <div class="block-3-HTH">
@@ -236,7 +238,7 @@
             
                         </div>
             
-                </a>
+                
             </div>
             </div>
             
@@ -715,7 +717,7 @@
 <script>
     $(document).ready(function(){
         var defaultDescriptionFile = 'descriptions/default-page.html';
-        var currentDescriptionFile = defaultDescriptionFile; // Variable pour suivre le fichier actuel
+        var currentDescriptionFile = defaultDescriptionFile; // Fichier actuel
 
         // Charge le fichier HTML dans un iframe
         function loadDescription(file) {
@@ -731,12 +733,11 @@
             e.preventDefault();
             var descriptionFile = $(this).data('description-file');
 
-            // Si on reclique sur le même lien, on recharge la page par défaut
-            if (descriptionFile === currentDescriptionFile) {
-                loadDescription(defaultDescriptionFile);
-            } else {
+            // Ne charge que si c'est un NOUVEAU fichier
+            if (descriptionFile !== currentDescriptionFile) {
                 loadDescription(descriptionFile);
             }
+            // Sinon, on ne fait rien (pas de rechargement)
         });
     });
 </script>
