@@ -101,7 +101,7 @@ h2 {
 /* Right-box (descriptions)      */
 /* ============================= */
 .right-panel {
-    width: 45%;
+    width: 50%;
     padding-left: 3rem;
     padding-right: 3rem;
     margin-right: 0;
@@ -113,7 +113,7 @@ h2 {
 
 
 .left-panel {
-    width: 55%;
+    width: 50%;
     color: white;
     padding-right: 10rem;
     padding-left: 3rem;
@@ -563,16 +563,16 @@ footer {
 /* Animation */
 /* =========================== */
 [class^="class-"]:hover {
-  filter: brightness(1.1); 
+  filter: brightness(1.07); 
   transition: all 0.25s ease-in-out;
   /* y shift */
   transform: translateY(-2px);
 }
 
 [class^="superclass-"]:hover {
-    filter: brightness(1.1); 
+    filter: brightness(1.07); 
     transition: all 0.25s ease-in-out;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
   }
 
 h2:hover {
