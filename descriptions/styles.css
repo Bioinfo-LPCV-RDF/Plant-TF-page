@@ -2,20 +2,20 @@ body {
     background-color: #ffffff00;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #3f3f3f;
 }
 
 h1{
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.7rem;
+    font-size: 2rem;
     color: #3f3f3f;
     margin-bottom: 0.5rem;
 }
 
 h2{
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     color: #3f3f3f;
     margin-bottom: 0.5rem;
 }
@@ -23,7 +23,7 @@ h2{
 p {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff00;
-    font-size: 2rem;
+    font-size:1.5rem;
     text-align: justify;
     color: #3f3f3f;
 }
@@ -31,7 +31,7 @@ p {
 ul {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff00;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: justify;
     padding-left: 1.2rem;
     color: #3f3f3f;
