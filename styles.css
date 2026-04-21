@@ -144,11 +144,11 @@ h2 {
     transition: all 1s ease-in-out;
 }
 
-#additional-text-div iframe {
+/* #additional-text-div iframe {
     width: 100%;
     height: 100%;
     font-size: 3rem;
-}
+} */
 
 /* ============================= */
 /* Left-box (classification)     */
@@ -168,7 +168,7 @@ h2 {
     color: #929292;
     text-align: justify;
     width: 100%;
-    padding-top:2rem;
+    padding-top:1.5rem;
 
     
 }
