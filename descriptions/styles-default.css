@@ -1,0 +1,70 @@
+.body {
+    display: flex;
+    background-color: #ffffff00;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.img-arrow {
+    /* size */
+    width: 20%;
+}
+
+.msg {
+    /* size */
+    font-size: 3.5rem;
+    padding-left: 5rem;
+    color: #2db38a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* responsivness */
+/* Portrait étroit */
+@media (max-aspect-ratio: 2/3) {
+    .flex {
+        flex-direction: row;
+    }
+    
+    .img-arrow {
+        width: 20%;
+    }
+    
+    .msg {
+        padding-left: 5rem;
+    }
+  }
+  
+  /* Portrait large / carré */
+  @media (min-aspect-ratio: 2/3) and (max-aspect-ratio: 1/1) {
+    .flex {
+        flex-direction: column;
+        flex-wrap: wrap; /* important */
+    }
+    
+    .img-arrow {
+        width: 50px;
+        margin-bottom: 1rem;
+    }
+    
+    .msg {
+        padding-left: 0;
+        text-align: center;
+        
+    }
+  }
+  
+  /* Paysage */
+  @media (min-aspect-ratio: 1/1) {
+    .msg { color: red; }
+  }

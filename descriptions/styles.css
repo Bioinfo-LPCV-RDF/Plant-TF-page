@@ -3,30 +3,48 @@ body {
 }
 
 h1{
-	font-family: Calibri, sans-serif;
-    font-size: 2rem;
-    color: #000000;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.7rem;
+    color: #3f3f3f;
     margin-bottom: 0.5rem;
 }
 
 h2{
-	font-family: Calibri, sans-serif;
-    font-size: 1.7rem;
-    color: #000000;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    color: #3f3f3f;
     margin-bottom: 0.5rem;
 }
 
 p {
-    font-family: Calibri, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff00;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
+    color: #3f3f3f;
 }
 
 ul {
-    font-family: Calibri, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff00;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
     padding-left: 1.2rem;
+    color: #3f3f3f;
 }
+
+a {
+    color: #2db38a; 
+    text-decoration: none;
+}
+a:visited {
+    color: #145a47;
+}
+a:hover {
+    color: #1f7f63;
+    text-decoration: underline;
+}
+a:active {
+    color: #145a47;
+}
+

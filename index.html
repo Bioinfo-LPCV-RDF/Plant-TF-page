@@ -28,14 +28,13 @@
     <div class="container-header">
         
         <div class="content-header">
-            <h1>Structural classification for plant transcription factors</h1>
+            <img id="logo" src="images/img-logo-test.png" class="logo-TF" alt="Logo">
+            <h1 style="color: #2db38a; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">Structural classification for plant transcription factors</h1>
             <a href="https://www.cell.com/trends/plant-science/fulltext/S1360-1385(23)00227-3" target="_blank" class="quote">
-                <p class="quote"><i>Blanc-Mathieu, Romain et al. Trends in Plant Science, Volume 29, Issue 1, 40 - 51</i></p>
+                <p class="quote"><i>Blanc-Mathieu, Romain et al. Trends in Plant Science, Volume 29, Issue 1, 40 - 51 (https://doi.org/10.1016/j.tplants.2023.06.023)</i></p>
             </a>
-            <a href="https://doi.org/10.1016/j.tplants.2023.06.023" target="_blank" class="quote">
-                <p class="quote"><i>https://doi.org/10.1016/j.tplants.2023.06.023</i></p>
-            </a>
-            <div class="classif-texte">
+
+            <div class="classif-text">
                 <p>Transcription factors (TFs) bind to specific DNA sequences to regulate gene expression. This fundamental process relies on their DNA-binding domain (DBD). 
                     In mammals, the diversity of DBD structural conformations and their interactions with DNA have been used to establish the hierarchical TFClass classification. 
                     However, this classification did not account for the numerous DBD types found in plants but absent from mammalian genomes.
@@ -43,26 +42,25 @@
                     <br><br/>
                     We reviewed the 3D structures and models of plant TF DBDs to classify most of the 56 recognized plant TF types within the TFClass framework. 
                     This extended classification introduces eight new classes and 37 new families corresponding to DBD structures not found in mammals. 
-                    Plant-TFClass thus provides a unique resource for comparing TFs across families and organisms.</p>
-                    <br><br/>
+                    Plant-TFClass thus provides a unique resource for comparing TFs across families and organisms.
+                </p>
+         
 
             </div>
+
             
         </div>
+
         
     </div>
+    <div class="arrow">
+        <img src="images/img-arrow.png" alt="arrow" class="img-arrow">
+        <p class="text-arrow">Please make a selection </p>
+    </div>
     <hr>
+
     
-    <div class="legend">
-        <h2>LEGEND</h2>
-        Colors differentiate the eight structurally defined superclasses of TFs
-        DBDs that have homologs in plants.
-        A white outline groups the classes, while families are highlighted with a lighter background. 
-        Asterisks indicate TF families and classes that are not included in mammal TFClass. 
-        TF families share an evolutionary relationship, at least through distant sequence homology in the portion of 
-        the DBD that directly interacts with DNA. The only exceptions are families within the 
-        ‘Other C4 zinc finger-type factors’ and the ‘basic helix–loop–helix (bHLH)’ classes. 
-        </div>
+
     
     <!-- <div id="additionnal-head-classif" class="padding-15 classif-head">
         SUPERCLASS
@@ -689,56 +687,80 @@
                 </div>
             
             </div>
-            
+            <div class="legend">
+
+                Legend: Colors differentiate the eight structurally defined superclasses of TFs
+                DBDs that have homologs in plants.
+                A white outline groups the classes, while families are highlighted with a lighter background. 
+                Asterisks indicate TF families and classes that are not included in mammal TFClass. 
+                TF families share an evolutionary relationship, at least through distant sequence homology in the portion of 
+                the DBD that directly interacts with DNA. The only exceptions are families within the 
+                ‘Other C4 zinc finger-type factors’ and the ‘basic helix–loop–helix (bHLH)’ classes. 
+            </div>
     </div>
+
         <div class="right-panel" id="right-panel">
 
             <div id="additional-text-div" class="additional-content">
-                <!-- <img src="images/img-classif.png" width="400" height="550"> -->
-                <!-- Additional text when opening a menu -->
+
             </div>
         </div>
+       
     </div>
-
+   
 
 </body>
 
 <footer>
-    <p class="text-footer">2024</p>
-    <p class="text-footer-j">Laboratoire Physiologie Cellulaire et
-        Végétale, Université Grenoble Alpes,
-        CNRS, CEA, INRAE, IRIG-DBSCI-LPCV,
-        17 Avenue des Martyrs, F-38054,
-        Grenoble, France</p>
-    <p class="text-footer">Contact (email): francois.parcy@cnrs.fr </p>
-    <p class="text-footer">Contact (X): @romain_bm | @turchi_l | @Francois_Parcy </p>
-
+    <p class="text-footer"style="font-size:1.7rem;">
+        2026
+    </p>
+    <p class="text-footer"style="font-size:1.3rem;">
+        Laboratoire Physiologie Cellulaire et Végétale, Université Grenoble Alpes (IRIG-DBSCI-LPCV)
+    </p>
+    <p class="text-footer"style="font-size:1.3rem;"> 
+        17 Avenue des Martyrs, F-38054, Grenoble, France
+    </p>
+    <p class="text-footer" style="font-size: 2rem; color: #2db38a;">
+        <a href="https://www.lpcv.fr/Pages/Flo_Re/Presentation.aspx" target="_blank">Team website</a>
+    </p>
+    <p class="text-footer">Contact: romain.blancmathieu@cea.fr </p>
 </footer>
+
 <script>
     $(document).ready(function(){
+    
         var defaultDescriptionFile = 'descriptions/default-page.html';
-        var currentDescriptionFile = defaultDescriptionFile; // Fichier actuel
-
-        // Charge le fichier HTML dans un iframe
+        var currentDescriptionFile = defaultDescriptionFile;
+        var lastClickedFile = null;
+    
         function loadDescription(file) {
-            currentDescriptionFile = file; // Met à jour le fichier actuel
-            $('#additional-text-div').html('<iframe src="' + file + '" width="100%" height="100%" style="border: none;"></iframe>');
+            currentDescriptionFile = file;
+            $('#additional-text-div').html(
+                '<iframe src="' + file + '" width="100%" height="100%" style="border: none;"></iframe>'
+            );
         }
-
-        // Charge la description par défaut au démarrage
+    
+        // load default at start
         loadDescription(defaultDescriptionFile);
-
-        // Gestion du clic sur les liens
+    
         $('a[data-description-file]').on('click', function(e){
             e.preventDefault();
+    
             var descriptionFile = $(this).data('description-file');
-
-            // Ne charge que si c'est un NOUVEAU fichier
-            if (descriptionFile !== currentDescriptionFile) {
-                loadDescription(descriptionFile);
+    
+            // if click on the same link, come back to the default page
+            if (lastClickedFile === descriptionFile) {
+                loadDescription(defaultDescriptionFile);
+                lastClickedFile = null;
+                return;
             }
-            // Sinon, on ne fait rien (pas de rechargement)
+    
+            // if click on different link, new link and no default page
+            loadDescription(descriptionFile);
+            lastClickedFile = descriptionFile;
         });
+    
     });
 </script>
 
