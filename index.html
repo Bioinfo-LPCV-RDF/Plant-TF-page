@@ -728,40 +728,51 @@
 </footer>
 
 <script>
-    $(document).ready(function(){
-    
-        var defaultDescriptionFile = 'descriptions/default-page.html';
-        var currentDescriptionFile = defaultDescriptionFile;
-        var lastClickedFile = null;
-    
-        function loadDescription(file) {
-            currentDescriptionFile = file;
-            $('#additional-text-div').html(
-                '<iframe src="' + file + '" width="100%" height="100%" style="border: none;"></iframe>'
-            );
-        }
-    
-        // load default at start
+$(document).ready(function(){
+
+    var defaultDescriptionFile = 'descriptions/default-page.html';
+    var currentDescriptionFile = defaultDescriptionFile;
+    var lastClickedFile = null;
+
+    // Load description files
+    function loadDescription(file) {
+        currentDescriptionFile = file;
+        $('#additional-text-div').html(
+            '<iframe src="' + file + '" width="100%" height="100%" style="border: none;"></iframe>'
+        );
+        // update URL
+        window.location.hash = file.replace('descriptions/', '').replace('.html', '');
+    }
+
+    // check if page hash url is not empty 
+    if (window.location.hash) {
+        var hash = window.location.hash.substring(1); // remove #
+        var file = 'descriptions/' + hash + '.html';
+        loadDescription(file);
+        lastClickedFile = file;
+    } else {
         loadDescription(defaultDescriptionFile);
-    
-        $('a[data-description-file]').on('click', function(e){
-            e.preventDefault();
-    
-            var descriptionFile = $(this).data('description-file');
-    
-            // if click on the same link, come back to the default page
-            if (lastClickedFile === descriptionFile) {
-                loadDescription(defaultDescriptionFile);
-                lastClickedFile = null;
-                return;
-            }
-    
-            // if click on different link, new link and no default page
-            loadDescription(descriptionFile);
-            lastClickedFile = descriptionFile;
-        });
-    
+    }
+
+    $('a[data-description-file]').on('click', function(e){
+        e.preventDefault();
+
+        var descriptionFile = $(this).data('description-file');
+
+        // get on default page 
+        if (lastClickedFile === descriptionFile) {
+            loadDescription(defaultDescriptionFile);
+            lastClickedFile = null;
+            window.location.hash = '';
+            return;
+        }
+
+        // or move to new description page
+        loadDescription(descriptionFile);
+        lastClickedFile = descriptionFile;
     });
+
+});
 </script>
 
 
