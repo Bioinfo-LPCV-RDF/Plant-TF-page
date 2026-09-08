@@ -29,7 +29,7 @@
         
         <div class="content-header">
             <img id="logo" src="images/img-logo-test.png" class="logo-TF" alt="Logo">
-            <h1 style="color: #2db38a; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">Structural classification for plant transcription factors</h1>
+            <h1 id="title" style="color: #2db38a; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">Structural classification for plant transcription factors</h1>
             <a href="https://www.cell.com/trends/plant-science/fulltext/S1360-1385(23)00227-3" target="_blank" class="quote">
                 <p class="quote"><i>Blanc-Mathieu, Romain et al. Trends in Plant Science, Volume 29, Issue 1, 40 - 51 (https://doi.org/10.1016/j.tplants.2023.06.023)</i></p>
             </a>
@@ -759,18 +759,27 @@ $(document).ready(function(){
 
         var descriptionFile = $(this).data('description-file');
 
-        // get on default page 
-        if (lastClickedFile === descriptionFile) {
-            loadDescription(defaultDescriptionFile);
-            lastClickedFile = null;
-            window.location.hash = '';
-            return;
-        }
+        // // 
+        // if (lastClickedFile === descriptionFile) {
+        //     loadDescription(defaultDescriptionFile);
+        //     lastClickedFile = null;
+        //     window.location.hash = '';
+        //     return;
+        // }
 
         // or move to new description page
         loadDescription(descriptionFile);
         lastClickedFile = descriptionFile;
     });
+
+    // get on default page when cliking on logo or header title
+    $('#title, #logo').on('click', function(e){
+        e.preventDefault();
+        loadDescription(defaultDescriptionFile);
+        lastClickedFile = null;
+        window.location.hash = '';
+    });
+
 
 });
 </script>
